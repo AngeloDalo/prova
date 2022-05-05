@@ -17,5 +17,6 @@ export class LoginComponent implements OnInit {
 
   gestAut() {
     console.log(this.userId);
+    console.log(this.password);
   }
 }

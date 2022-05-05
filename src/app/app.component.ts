@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'prova';
+  saluti: string = "Benvenuti nella prova di Angular";
+  bollini: number = 1000;
 }

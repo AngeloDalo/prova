@@ -1,15 +1,14 @@
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './welcome/welcome.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ArticoliComponent } from './pages/articoli/articoli.component';
+import { BrowserModule } from '@angular/platform-browser';
 import { CoreModule } from './core/core.module';
-import { LoginComponent } from './login/login.component';
-import { ErrorComponent } from './error/error.component';
-import { ArticoliComponent } from './articoli/articoli.component';
-import { LogoutComponent } from './logout/logout.component';
+import { ErrorComponent } from './pages/error/error.component';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './pages/login/login.component';
+import { LogoutComponent } from './pages/logout/logout.component';
+import { NgModule } from '@angular/core';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +17,7 @@ import { LogoutComponent } from './logout/logout.component';
     LoginComponent,
     ErrorComponent,
     ArticoliComponent,
-    LogoutComponent,
+    LogoutComponent
   ],
   imports: [
     BrowserModule,

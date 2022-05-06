@@ -1,5 +1,5 @@
-import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+
 import { AuthappService } from 'src/services/authapp.service';
 
 @Component({
@@ -16,3 +16,4 @@ export class LogoutComponent implements OnInit {
   }
 
 }
+

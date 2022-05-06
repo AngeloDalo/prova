@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthappService } from 'src/services/authapp.service';
 
 @Component({
   selector: 'app-login',
@@ -18,14 +19,14 @@ export class LoginComponent implements OnInit {
   titolo: string = "Accesso e autenticazione";
   sottotitolo: string = "Procedi ad inserire la userId e password";
 
-  constructor(private route: Router) { }
+  constructor(private route: Router, private BasicAuth: AuthappService) { }
 
   ngOnInit(): void {
   }
 
   gestAut() {
     console.log(this.userId);
-    if (this.userId === "Nicola" && this.password === "123_Stella") {
+    if (this.BasicAuth.authenticat(this.userId, this.password)) {
       this.route.navigate(['welcome', this.userId]); //passo il parametro
       this.autenticato = true;
       // this.consentito = true;

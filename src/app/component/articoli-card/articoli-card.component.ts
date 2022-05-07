@@ -24,10 +24,8 @@ export class ArticoliCardComponent implements OnInit {
     imageUrl: ''
   };
 
-  @Output()
-  delete = new EventEmitter();
-  @Output()
-  edit = new EventEmitter();
+  @Output() delete = new EventEmitter();
+  @Output() edit = new EventEmitter();
 
   ngOnInit(): void {
   }
